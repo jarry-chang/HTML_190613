@@ -9,12 +9,13 @@
 <body>
 
     <button onclick="showMessage()">點我提示輸入文字，然後顯示!!</button>
-
+<!-- 互動式跳出視窗 加法 -->
     <script>
         function showMessage() {
-
-            // 接收使用者的輸入 prompt
-
+     var x = prompt("請輸入x","");
+     var y = prompt("請輸入y","");
+       var result = parseInt(x) + parseInt(y);
+       console.log(result);     // 接收使用者的輸入 prompt
         }
 
     </script>

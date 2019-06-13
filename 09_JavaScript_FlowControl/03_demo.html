@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 請設計一個介面，讓使用者輸入頻道代碼後，網頁可以顯示對應的頻道名稱 -->
+    查詢節目
+    <input type="text" name="" id="num">
+    <button onclick="qury()">查詢</button>
+    <p id="demo">查詢結果</p>
+    <script>
+        function qury() {
+            var elm = document.getElementById("num").value;
+            switch (elm) {
+                case "20":
+                    document.getElementById("demo").textContent = "TLC 旅遊生活頻道";
+                    break;
+                case "65":
+                    document.getElementById("demo").textContent = "HBO";
+                    break;
+                case "66":
+                    document.getElementById("demo").textContent = "東森洋片台";
+                    break;
+                default:
+                document.getElementById("demo").textContent = "查無此頻道"
+                    break;
+
+            }
+        }
+    </script>
+</body>
+
+</html>

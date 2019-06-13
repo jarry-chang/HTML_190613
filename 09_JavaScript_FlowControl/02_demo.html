@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var a = new Date();
+        var b = a.getHours();
+
+        if (8 <= b && b <= 11) {
+            console.log("上午課程");
+        } else if (b == 12) {
+            console.log("中午課程");
+        } else if (13 <= b && b <= 16) {
+            console.log("下午課程");
+        } else {
+            console.log("PASS");
+        }
+
+        // 6. 使用三元運算子，判斷12點以前為AM，否則為PM
+        var result2 = b<=8 ? "AM" : "PM";
+    </script>
+
+</body>
+
+</html>

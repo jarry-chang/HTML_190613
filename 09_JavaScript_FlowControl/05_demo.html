@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="sum()">開始統計飲料金額</button>
+    <p id="demo"></p>
+    <script>
+        function sum() {
+            vat tot = 0;
+            do {
+                // 透過 prompt 讓使用者輸入金額
+                var input = parseInt(prompt("輸入"));
+            } while (input != 0)
+            // 若輸入0表示不再輸入，進行畫面顯示結算金額
+            alert("總金額" + tot );
+        }
+    </script>
+</body>
+
+</html>
